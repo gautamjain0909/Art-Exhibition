@@ -1,0 +1,26 @@
+{
+  "name": "Virtual Art Exhibition",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://<username>.github.io/<repository-name>",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "clean": "rm -rf dist/*",
+    "build:parcel": "parcel build src/index.html --no-content-hash --no-source-maps --public-url ./",
+    "build": "npm run clean && npm run build:parcel",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Gautam Jain",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "imagesloaded": "^4.1.4",
+    "parcel": "latest",
+    "splitting": "^1.1.0"
+  },
+  "devDependencies": {
+    "events": "^3.3.0",
+    "gh-pages": "^6.1.1"
+  }
+}
