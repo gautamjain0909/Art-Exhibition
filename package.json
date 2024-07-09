@@ -2,7 +2,7 @@
   "name": "Virtual Art Exhibition",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://<username>.github.io/<repository-name>",
+  "homepage": "https://gautamjain0909.github.io/Art-Exhibition",
   "scripts": {
     "start": "parcel src/index.html --open",
     "clean": "rm -rf dist/*",
